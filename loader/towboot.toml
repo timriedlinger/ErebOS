@@ -1,0 +1,9 @@
+default = "erebos"
+timeout = 0
+log_level = "info"
+
+[entries]
+  [entries.erebos]
+    name = "ErebOS"
+    image = "kernel.elf"
+    modules = [ { image = "initrd.tar", argv = "initrd.tar" } ]
